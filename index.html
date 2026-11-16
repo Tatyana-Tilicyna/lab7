@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelGo — Путешествия начинаются здесь</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <span class="logo-icon">✈</span> TravelGo
+      </a>
+
+      <nav class="header__nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Туры</a></li>
+          <li><a href="#services" class="nav-link">Направления</a></li>
+          <li><a href="#projects" class="nav-link">О нас</a></li>
+          <li><a href="#team" class="nav-link">Блог</a></li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" title="Поиск">🔍</button>
+        <button class="icon-btn" title="Избранное">♡</button>
+        <button class="btn btn--outline">Войти</button>
+
+        <div class="view-toggle">
+          <button type="button" data-view="desktop" class="toggle-btn active">Desktop</button>
+          <button type="button" data-view="mobile" class="toggle-btn">Mobile</button>
+        </div>
+      </div>
+
+      <button class="burger" id="burgerBtn" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">Путешествия начинаются здесь</h1>
+        <p class="hero__subtitle">Лучшие направления, выгодные туры и незабываемые впечатления в одном месте</p>
+
+        <form class="hero__search" id="searchForm">
+          <div class="search-field">
+            <span class="search-field__icon">📍</span>
+            <div>
+              <label>Куда едем?</label>
+              <input type="text" placeholder="Страна, город, курорт">
+            </div>
+          </div>
+          <div class="search-field">
+            <span class="search-field__icon">📅</span>
+            <div>
+              <label>Когда?</label>
+              <input type="text" placeholder="Выберите даты">
+            </div>
+          </div>
+          <div class="search-field">
+            <span class="search-field__icon">👤</span>
+            <div>
+              <label>Кто едет?</label>
+              <input type="text" placeholder="Взрослые, дети">
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary">Найти туры</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="container trust__inner">
+      <div class="trust__item">
+        <span class="trust__icon">🌍</span>
+        <div><strong>Более 1000 туров</strong><br>по всему миру</div>
+      </div>
+      <div class="trust__item">
+        <span class="trust__icon">🛡️</span>
+        <div><strong>Гарантия</strong><br>лучшей цены</div>
+      </div>
+      <div class="trust__item">
+        <span class="trust__icon">🎧</span>
+        <div><strong>Поддержка 24/7</strong><br>на всех этапах</div>
+      </div>
+      <div class="trust__item">
+        <span class="trust__icon">⭐</span>
+        <div><strong>Реальные отзывы</strong><br>наших туристов</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Популярные направления</h2>
+        <a href="#" class="section__link">Смотреть все →</a>
+      </div>
+
+      <div class="grid grid--4 services__grid">
+        <article class="card card--turkey">
+          <div class="card__image">
+            <span class="card__badge">🔥 Хит</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Турция</h3>
+            <p class="card__desc">Пляжи, история, шопинг</p>
+            <div class="card__footer">
+              <span class="card__price">от 45 000 ₽</span>
+              <button class="btn btn--sm btn--primary">Подробнее</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--italy">
+          <div class="card__image">
+            <span class="card__badge">🔥 Хит</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Италия</h3>
+            <p class="card__desc">Искусство, кухня, романтика</p>
+            <div class="card__footer">
+              <span class="card__price">от 65 000 ₽</span>
+              <button class="btn btn--sm btn--primary">Подробнее</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--iceland">
+          <div class="card__image">
+            <span class="card__badge">✨ Новинка</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Исландия</h3>
+            <p class="card__desc">Гейзеры, вулканы, природа</p>
+            <div class="card__footer">
+              <span class="card__price">от 70 000 ₽</span>
+              <button class="btn btn--sm btn--primary">Подробнее</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--georgia">
+          <div class="card__image">
+            <span class="card__badge">💎 Премиум</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Грузия</h3>
+            <p class="card__desc">Горы, вино, гостеприимство</p>
+            <div class="card__footer">
+              <span class="card__price">от 50 000 ₽</span>
+              <button class="btn btn--sm btn--primary">Подробнее</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo">
+    <div class="container promo__inner">
+      <div class="promo__text">
+        <h2 class="promo__title">Раннее бронирование на лето 2025</h2>
+        <p class="promo__desc">Скидки до 30% на популярные направления</p>
+        <button class="btn btn--primary">Узнать подробнее</button>
+      </div>
+      <div class="promo__badge">-30%</div>
+    </div>
+  </section>
+
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Как это работает</h2>
+      </div>
+
+      <div class="grid grid--4 projects__grid">
+        <div class="step">
+          <div class="step__number">1</div>
+          <div class="step__icon">🔍</div>
+          <h3>Выберите направление</h3>
+          <p>Используйте поиск или подберите тур по фильтрам</p>
+        </div>
+        <div class="step">
+          <div class="step__number">2</div>
+          <div class="step__icon">📋</div>
+          <h3>Забронируйте тур</h3>
+          <p>Укажите даты и количество туристов</p>
+        </div>
+        <div class="step">
+          <div class="step__number">3</div>
+          <div class="step__icon">💳</div>
+          <h3>Оплатите онлайн</h3>
+          <p>Удобные способы оплаты</p>
+        </div>
+        <div class="step">
+          <div class="step__number">4</div>
+          <div class="step__icon">✈️</div>
+          <h3>Получите документы</h3>
+          <p>Все документы придут на e-mail</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tech" id="tech">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Технологии платформы</h2>
+      </div>
+      <div class="tech__list">
+        <div class="tech__item">
+          <span class="tech__icon">🔐</span>
+          <div><strong>SSL-шифрование</strong><br>безопасные платежи</div>
+        </div>
+        <div class="tech__item">
+          <span class="tech__icon">🤖</span>
+          <div><strong>AI-рекомендации</strong><br>подбор туров</div>
+        </div>
+        <div class="tech__item">
+          <span class="tech__icon">📱</span>
+          <div><strong>Мобильное приложение</strong><br>iOS и Android</div>
+        </div>
+        <div class="tech__item">
+          <span class="tech__icon">🌐</span>
+          <div><strong>Мультиязычность</strong><br>12 языков</div>
+        </div>
+        <div class="tech__item">
+          <span class="tech__icon">⚡</span>
+          <div><strong>Быстрая загрузка</strong><br>CDN и кэширование</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Отзывы путешественников</h2>
+        <a href="#" class="section__link">Смотреть все →</a>
+      </div>
+
+      <div class="grid grid--3 team__grid">
+        <div class="review">
+          <div class="review__header">
+            <div class="review__avatar">А</div>
+            <div>
+              <strong>Анна П.</strong>
+              <div class="review__stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review__text">«Незабываемый отдых в Турции! Всё было организовано на высшем уровне. Обязательно поедем ещё раз!»</p>
+          <span class="review__date">12 июня 2025</span>
+        </div>
+
+        <div class="review">
+          <div class="review__header">
+            <div class="review__avatar">И</div>
+            <div>
+              <strong>Игорь С.</strong>
+              <div class="review__stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review__text">«Путешествие в Италию — это мечта! Прекрасная организация, отличные отели. Спасибо TravelGo!»</p>
+          <span class="review__date">3 апреля 2025</span>
+        </div>
+
+        <div class="review">
+          <div class="review__header">
+            <div class="review__avatar">М</div>
+            <div>
+              <strong>Мария К.</strong>
+              <div class="review__stars">★★★★☆</div>
+            </div>
+          </div>
+          <p class="review__text">«Тур в Исландию превзошёл все ожидания. Удивительная природа! Единственное — хотелось бы больше времени.»</p>
+          <span class="review__date">28 марта 2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="header__logo"><span class="logo-icon">✈</span> TravelGo</a>
+        <p>© 2025 TravelGo. Все права защищены.</p>
+      </div>
+
+      <div class="footer__links">
+        <h4>О компании</h4>
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Вакансии</a></li>
+          <li><a href="#">Блог</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4>Партнёрские программы</h4>
+        <ul>
+          <li><a href="#">Стать партнёром</a></li>
+          <li><a href="#">Турагентствам</a></li>
+          <li><a href="#">Отелям</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__subscribe">
+        <h4>Подпишитесь на новости</h4>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Ваш email">
+          <button type="submit" class="btn btn--primary">→</button>
+        </form>
+        <div class="footer__social">
+          <a href="#" title="Telegram">✈</a>
+          <a href="#" title="VK">ВК</a>
+          <a href="#" title="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
